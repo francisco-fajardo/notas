@@ -95,14 +95,17 @@ foreach (new DirectoryIterator(__DIR__ . '/img/notas/') as $file) {
 
     $filename = $file->getFilename();
     $exploded = explode('.', $filename);
+
     $year = $exploded[0];
     $career = str_replace('-', ' ', $exploded[1]);
     $section = $exploded[2];
+
+    $courseName = $year . ' ' . $career . ' &quot;' . $section . '&quot;';
     $url = 'img/notas/' . $filename;
 ?>
         <li>
-          <div class="collapsible-header"><?php echo $year . ' ' . $career . ' "' . $section . '"'; ?></div>
-          <div class="collapsible-body"><img src="<?php echo $url; ?>" /></div>
+          <div class="collapsible-header"><?php echo $courseName; ?></div>
+          <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo 'Notas del ' . $courseName; ?>" class="lazy" /></div>
         </li>
 <?php } ?>
       </ul>
@@ -137,6 +140,7 @@ foreach (new DirectoryIterator(__DIR__ . '/img/notas/') as $file) {
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.3/lazyload.min.js" integrity="sha512-V3DZ9ZAJrv8ZYY5Zarlfjusec9J6S8htRT3bJDKTdEgq0g9OhbHQUjK+vsBkE6CH0J5VJtBCzPSXJ0ZCVpjPdQ==" crossorigin="anonymous"></script>
   <script src="js/dist/runtime.js"></script>
   <script src="js/dist/main.js"></script>
 </body>

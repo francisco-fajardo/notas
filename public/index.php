@@ -33,7 +33,7 @@
   <meta property="og:description" content="Creamos estudiantes con miras al éxito de un país productivo" />
   <meta property="og:locale" content="es_VE" />
   <meta property="og:site_name" content="E.T. &quot;Francisco Fajardo&quot;" />
-  <meta property="og:url" content="https://franciscofajardo.com" />
+  <meta property="og:url" content="https://franciscofajardo.com/notas/" />
   <meta property="og:type" content="school" />
 
   <!-- Twitter SEO Tags -->
@@ -41,7 +41,7 @@
   <meta name="twitter:image" content="https://franciscofajardo.com/img/logo.png" />
   <meta name="twitter:title" content="Notas - E.T. &quot;Francisco Fajardo&quot;" />
   <meta name="twitter:description" content="Creamos estudiantes con miras al éxito de un país productivo" />
-  <meta name="twitter:url" content="https://franciscofajardo.com" />
+  <meta name="twitter:url" content="https://franciscofajardo.com/notas/" />
 
   <!-- Favicon's -->
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png" />

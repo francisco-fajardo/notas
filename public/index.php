@@ -116,8 +116,8 @@ foreach (new DirectoryIterator(__DIR__ . '/img/notas/') as $file) {
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Notas</h5>
-          <p class="grey-text text-lighten-4">E.T. "Francisco Fajardo"</p>
+          <h5 class="white-text">E.T. "Francisco Fajardo"</h5>
+          <p class="grey-text text-lighten-4">Creamos estudiantes con miras al éxito de un país productivo</p>
         </div>
 
         <div class="col l4 offset-l2 s2">

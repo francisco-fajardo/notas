@@ -10,7 +10,7 @@
     "caricuao",
     "liceo"
   ],
-  "author": "Leober Ramos <leober.ramos33@gmail.com>",
+  "author": "E.T. \"Francisco Fajardo\"",
   "license": "Apache-2.0",
   "scripts": {
     "build-dev": "webpack --mode development",

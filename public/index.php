@@ -89,25 +89,29 @@
       </div>
 
       <ul class="collapsible">
-<?php
-foreach (new DirectoryIterator(__DIR__ . '/img/notas/') as $file) {
-    if ($file->isDot()) continue;
+<?php foreach (new DirectoryIterator(__DIR__ . "/img/notas/") as $file) {
+
+    if ($file->isDot()) {
+        continue;
+    }
 
     $filename = $file->getFilename();
-    $exploded = explode('.', $filename);
+    $exploded = explode(".", $filename);
 
     $year = $exploded[0];
-    $career = str_replace('-', ' ', $exploded[1]);
+    $career = str_replace("-", " ", $exploded[1]);
     $section = $exploded[2];
 
-    $courseName = $year . ' ' . $career . ' &quot;' . $section . '&quot;';
-    $url = 'img/notas/' . $filename;
-?>
+    $courseName = $year . " " . $career . " &quot;" . $section . "&quot;";
+    $url = "img/notas/" . $filename;
+    ?>
         <li>
           <div class="collapsible-header"><?php echo $courseName; ?></div>
-          <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo 'Notas del ' . $courseName; ?>" class="lazy" /></div>
+          <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo "Notas del " .
+    $courseName; ?>" class="lazy" /></div>
         </li>
-<?php } ?>
+<?php
+} ?>
       </ul>
     </div>
   </main>

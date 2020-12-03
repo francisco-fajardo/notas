@@ -5,11 +5,13 @@ Este sistema fue creado econ el proposito de que los estudiantes del E.T. "Franc
 ## Funcionamiento
 
 Sube en la carpeta `public/img/notas/` las imagenes con las notas de los estudiantes, con el siguiente formato de archivo:
+
 ```
 Año.Mención.Sección.extensión
 ```
 
 Ejemplos:
+
 ```
 4to.Informática.U.png
 5to.Construcción-Civil.A.jpg

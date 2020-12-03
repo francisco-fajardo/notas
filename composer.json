@@ -2,7 +2,13 @@
     "name": "francisco-fajardo/notas",
     "description": "Sistema Web NF",
     "type": "project",
-    "keywords": ["francisco fajardo", "fajardo", "escuela tecnica", "caricuao", "liceo"],
+    "keywords": [
+        "francisco fajardo",
+        "fajardo",
+        "escuela tecnica",
+        "caricuao",
+        "liceo"
+    ],
     "license": "Apache-2.0",
     "authors": [
         {

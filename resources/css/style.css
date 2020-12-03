@@ -1,18 +1,18 @@
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 .collapsible-header {
-  justify-content: center;
+    justify-content: center;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }

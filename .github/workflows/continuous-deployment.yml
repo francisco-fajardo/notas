@@ -40,3 +40,9 @@ jobs:
                   password: ${{ secrets.FTP_PASSWORD }}
                   local-dir: ./public/
                   server-dir: ./notas/
+
+            - name: Purge Cache of Cloudflare
+              uses: jakejarvis/cloudflare-purge-action@master
+              env:
+                  CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+                  CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}

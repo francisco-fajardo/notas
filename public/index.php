@@ -77,7 +77,7 @@
   <nav class="indigo darken-2">
     <div class="nav-wrapper container">
       <a href="https://franciscofajardo.com/notas/" class="brand-logo center">
-        <img src="img/covid.png" />
+        <img src="img/covid.png" alt="Contra el COVID-19" />
       </a>
     </div>
   </nav>

@@ -29,14 +29,6 @@ const config = {
                     "postcss-loader",
                 ],
             },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                loader: "file-loader",
-                options: {
-                    outputPath: "../../img",
-                    name: "[name].[ext]",
-                },
-            },
         ],
     },
     plugins: [

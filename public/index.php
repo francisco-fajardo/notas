@@ -59,7 +59,7 @@
   <link rel="icon" sizes="16x16" href="icons/favicon-16x16.png" />
   <link rel="shortcut icon" href="favicon.ico" />
 
-  <!-- Manifest -->
+  <!-- Web App Manifest -->
   <link rel="manifest" href="manifest.webmanifest" />
 
   <!-- Styles -->

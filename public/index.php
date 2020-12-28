@@ -63,7 +63,6 @@
   <link rel="manifest" href="manifest.webmanifest" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dist/style.css" />
 

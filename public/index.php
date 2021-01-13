@@ -106,12 +106,13 @@
     $career = str_replace("-", " ", $exploded[1]);
     $section = $exploded[2];
 
-    $courseName = $year . " " . $career . " &quot;" . $section . "&quot;";
+    $courseNameWithQuotes = $year . " " . $career . ' "' . $section . '"';
+    $courseNameWithoutQuotes = $year . " " . $career . " &quot;" . $section . "&quot;";
     $url = "img/notas/" . $filename; ?>
         <li>
-          <div class="collapsible-header"><?php echo $courseName; ?></div>
+          <div class="collapsible-header"><?php echo $courseNameWithQuotes; ?></div>
           <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .
-    $courseName; ?>" class="lazy" /></div>
+    $courseNameWithoutQuotes; ?>" class="lazy" /></div>
         </li>
 <?php
 } ?>

@@ -89,11 +89,13 @@
 
       <ul class="collapsible">
 <?php foreach (new DirectoryIterator(__DIR__ . "/img/notas/") as $file) {
-    if ($file->isDot()) { // Skip directories "." and ".."
+    if ($file->isDot()) {
+        // Skip directories "." and ".."
         continue;
     }
 
-    if (preg_match("/\..*/", $file->getFilename())) { // Skip dotfiles
+    if (preg_match("/\..*/", $file->getFilename())) {
+        // Skip dotfiles
         continue;
     }
 

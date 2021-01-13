@@ -94,7 +94,7 @@
         continue;
     }
 
-    if (preg_match("/\..*/", $file->getFilename())) {
+    if (preg_match("/^\..*/", $file->getFilename())) {
         // Skip dotfiles
         continue;
     }
@@ -110,7 +110,7 @@
     $url = "img/notas/" . $filename; ?>
         <li>
           <div class="collapsible-header"><?php echo $courseName; ?></div>
-          <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo "Notas del " .
+          <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .
     $courseName; ?>" class="lazy" /></div>
         </li>
 <?php
@@ -147,7 +147,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.3/lazyload.min.js" integrity="sha512-V3DZ9ZAJrv8ZYY5Zarlfjusec9J6S8htRT3bJDKTdEgq0g9OhbHQUjK+vsBkE6CH0J5VJtBCzPSXJ0ZCVpjPdQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.0/lazyload.min.js" integrity="sha512-lVcnjCLGjJTaZU55wD7H3f8SJVi6VV5cQRcmGuYcyIY607N/rzZGEl90lNgsiEhKygATryG/i6e5u2moDFs5kQ==" crossorigin="anonymous"></script>
   <script src="js/dist/runtime.js"></script>
   <script src="js/dist/main.js"></script>
 </body>

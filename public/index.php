@@ -107,7 +107,8 @@
     $section = $exploded[2];
 
     $courseNameWithQuotes = $year . " " . $career . ' "' . $section . '"';
-    $courseNameWithoutQuotes = $year . " " . $career . " &quot;" . $section . "&quot;";
+    $courseNameWithoutQuotes =
+        $year . " " . $career . " &quot;" . $section . "&quot;";
     $url = "img/notas/" . $filename; ?>
         <li>
           <div class="collapsible-header"><?php echo $courseNameWithQuotes; ?></div>

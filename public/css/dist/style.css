@@ -1,1 +1,1 @@
-body{display:flex;min-height:100vh;flex-direction:column}main{flex:1 0 auto}.collapsible-header{justify-content:center}img{max-width:100%;height:auto}
+body{display:flex;min-height:100vh;flex-direction:column}main{flex:1 0 auto}.collapsible-header{justify-content:center}img{max-width:100%;height:auto}img.lazy{opacity:0}img:not(.initial){transition:opacity 1s}img.error,img.initial,img.loaded{opacity:1}img:not([src]){visibility:hidden}

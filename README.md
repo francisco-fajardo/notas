@@ -40,4 +40,4 @@ npm run build-dev
 
 ## Licencia
 
-Este proyecto esta bajo los términos de la Licencia de [Apache](https://github.com/francisco-fajardo/inicio/blob/master/LICENSE).
+Este proyecto esta bajo los términos de la Licencia de [MIT](https://github.com/francisco-fajardo/inicio/blob/master/LICENSE).

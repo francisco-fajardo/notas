@@ -106,7 +106,7 @@
     $section = $exploded[2];
 
     $title = "{$year} {$career} \"{$section}\"";
-    $altImage = "{$year} {$career} \"{$section}\"";
+    $altImage = "{$year} {$career} &quot;{$section}&quot;";
     $url = "img/notas/" . $file; ?>
         <li>
           <div class="collapsible-header"><?php echo $title; ?></div>

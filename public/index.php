@@ -89,7 +89,7 @@
 
       <ul class="collapsible">
 <?php foreach (scandir(__DIR__ . "/img/notas/") as $file) {
-    if ($file === '.' || $file === '..') {
+    if ($file === "." || $file === "..") {
         // Skip directories "." and ".."
         continue;
     }

@@ -88,32 +88,30 @@
       </div>
 
       <ul class="collapsible">
-<?php foreach (new DirectoryIterator(__DIR__ . "/img/notas/") as $file) {
-    if ($file->isDot()) {
+<?php foreach (scandir(__DIR__ . "/img/notas/") as $file) {
+    if ($file === '.' || $file === '..') {
         // Skip directories "." and ".."
         continue;
     }
 
-    if (preg_match("/^\..*/", $file->getFilename())) {
+    if (preg_match("/^\..*/", $file)) {
         // Skip dotfiles
         continue;
     }
 
-    $filename = $file->getFilename();
-    $exploded = explode(".", $filename);
+    $exploded = explode(".", $file);
 
     $year = $exploded[0];
     $career = str_replace("-", " ", $exploded[1]);
     $section = $exploded[2];
 
-    $courseNameWithQuotes = $year . " " . $career . ' "' . $section . '"';
-    $courseNameWithoutQuotes =
-        $year . " " . $career . " &quot;" . $section . "&quot;";
-    $url = "img/notas/" . $filename; ?>
+    $title = "{$year} {$career} \"{$section}\"";
+    $altImage = "{$year} {$career} \"{$section}\"";
+    $url = "img/notas/" . $file; ?>
         <li>
-          <div class="collapsible-header"><?php echo $courseNameWithQuotes; ?></div>
+          <div class="collapsible-header"><?php echo $title; ?></div>
           <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .
-    $courseNameWithoutQuotes; ?>" class="lazy" /></div>
+    $altImage; ?>" class="lazy" /></div>
         </li>
 <?php
 } ?>

@@ -102,8 +102,8 @@
     $exploded = explode(".", $file);
 
     $year = $exploded[0];
-    $career = str_replace("-", " ", $exploded[1]);
-    $section = $exploded[2];
+    $career = ucfirst(str_replace("-", " ", $exploded[1]));
+    $section = strtoupper($exploded[2]);
 
     $title = "{$year} {$career} \"{$section}\"";
     $altImage = "{$year} {$career} &quot;{$section}&quot;";

@@ -89,6 +89,7 @@
 
       <ul class="collapsible">
 <?php foreach (scandir(__DIR__ . "/img/notas/") as $file) {
+
     if ($file === "." || $file === "..") {
         // Skip directories "." and ".."
         continue;
@@ -107,7 +108,8 @@
 
     $title = "{$year} {$career} \"{$section}\"";
     $altImage = "{$year} {$career} &quot;{$section}&quot;";
-    $url = "img/notas/" . $file; ?>
+    $url = "img/notas/" . $file;
+    ?>
         <li>
           <div class="collapsible-header"><?php echo $title; ?></div>
           <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .

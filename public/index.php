@@ -22,7 +22,7 @@
 
   <!-- SEO Tags -->
   <meta name="author" content="E.T. &quot;Francisco Fajardo&quot;" />
-  <meta name="description" content="Creamos estudiantes con miras al éxito de un país productivo" />
+  <meta name="description" content="Formamos estudiantes con miras al éxito de un país productivo" />
   <meta name="keywords" content="francisco fajardo, fajardo, escuela tecnica, caricuao, liceo" />
 
   <link rel="canonical" href="https://franciscofajardo.com/notas/" />
@@ -30,7 +30,7 @@
   <!-- Open Graph / Facebook SEO Tags -->
   <meta property="og:image" content="https://franciscofajardo.com/img/logo.png" />
   <meta property="og:title" content="Notas - E.T. &quot;Francisco Fajardo&quot;" />
-  <meta property="og:description" content="Creamos estudiantes con miras al éxito de un país productivo" />
+  <meta property="og:description" content="Formamos estudiantes con miras al éxito de un país productivo" />
   <meta property="og:locale" content="es_VE" />
   <meta property="og:site_name" content="E.T. &quot;Francisco Fajardo&quot;" />
   <meta property="og:url" content="https://franciscofajardo.com/notas/" />
@@ -40,7 +40,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://franciscofajardo.com/img/logo.png" />
   <meta name="twitter:title" content="Notas - E.T. &quot;Francisco Fajardo&quot;" />
-  <meta name="twitter:description" content="Creamos estudiantes con miras al éxito de un país productivo" />
+  <meta name="twitter:description" content="Formamos estudiantes con miras al éxito de un país productivo" />
   <meta name="twitter:url" content="https://franciscofajardo.com/notas/" />
 
   <!-- Favicon's -->
@@ -126,7 +126,7 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">E.T. "Francisco Fajardo"</h5>
-          <p class="grey-text text-lighten-4">Creamos estudiantes con miras al éxito de un país productivo</p>
+          <p class="grey-text text-lighten-4">Formamos estudiantes con miras al éxito de un país productivo</p>
         </div>
 
         <div class="col l4 offset-l2 s2">

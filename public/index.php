@@ -25,7 +25,12 @@
   <meta name="description" content="Formamos estudiantes con miras al éxito de un país productivo" />
   <meta name="keywords" content="francisco fajardo, fajardo, escuela tecnica, caricuao, liceo" />
 
-  <link rel="canonical" href="<?php echo (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
+  <link rel="canonical" href="<?php echo (!empty($_SERVER["HTTPS"])
+      ? "https"
+      : "http") .
+      "://" .
+      $_SERVER["HTTP_HOST"] .
+      $_SERVER["REQUEST_URI"]; ?>" />
 
   <!-- Open Graph / Facebook SEO Tags -->
   <meta property="og:image" content="https://franciscofajardo.com/img/logo.png" />
@@ -33,7 +38,12 @@
   <meta property="og:description" content="Formamos estudiantes con miras al éxito de un país productivo" />
   <meta property="og:locale" content="es_VE" />
   <meta property="og:site_name" content="E.T. &quot;Francisco Fajardo&quot;" />
-  <meta property="og:url" content="<?php echo (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
+  <meta property="og:url" content="<?php echo (!empty($_SERVER["HTTPS"])
+      ? "https"
+      : "http") .
+      "://" .
+      $_SERVER["HTTP_HOST"] .
+      $_SERVER["REQUEST_URI"]; ?>" />
   <meta property="og:type" content="school" />
 
   <!-- Twitter SEO Tags -->
@@ -41,7 +51,12 @@
   <meta name="twitter:image" content="https://franciscofajardo.com/img/logo.png" />
   <meta name="twitter:title" content="Notas - E.T. &quot;Francisco Fajardo&quot;" />
   <meta name="twitter:description" content="Formamos estudiantes con miras al éxito de un país productivo" />
-  <meta name="twitter:url" content="<?php echo (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
+  <meta name="twitter:url" content="<?php echo (!empty($_SERVER["HTTPS"])
+      ? "https"
+      : "http") .
+      "://" .
+      $_SERVER["HTTP_HOST"] .
+      $_SERVER["REQUEST_URI"]; ?>" />
 
   <!-- Favicon's -->
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png" />

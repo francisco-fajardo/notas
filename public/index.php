@@ -78,6 +78,8 @@
   <link rel="manifest" href="site.webmanifest" />
 
   <!-- Styles -->
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dist/style.css" />
 
@@ -99,7 +101,23 @@
   <main>
     <div class="container">
       <div class="center">
-        <h1>Notas</h1>
+        <h1 style="margin-bottom:8px">Notas</h1>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <p class="grey-text text-darken-2 center" style="margin-top:0">
+                    <i class="material-icons md-24 d-block">calendar_today</i>
+                    2020 - 2021
+                </p>
+            </div>
+
+            <div class="col s12 m6">
+                <p class="grey-text text-darken-2 center" style="margin-top:0">
+                    <i class="material-icons md-24 d-block">announcement</i>
+                    1er Momento
+                </p>
+            </div>
+        </div>
       </div>
 
       <ul class="collapsible">

@@ -1,3 +1,3 @@
 <IfModule mod_headers.c>
-    Header always set Content-Security-Policy "script-src 'self' cdnjs.cloudflare.com; style-src 'self' cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' data:; manifest-src 'self'; font-src fonts.gstatic.com"
+    Header always set Content-Security-Policy "script-src 'self' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' data:; manifest-src 'self'; font-src fonts.gstatic.com"
 </IfModule>

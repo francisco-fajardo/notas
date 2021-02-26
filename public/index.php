@@ -121,16 +121,16 @@
     </div>
   </main>
 
-  <footer class="page-footer indigo darken-2">
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">E.T. "Francisco Fajardo"</h5>
-          <p class="grey-text text-lighten-4">Formamos estudiantes con miras al éxito de un país productivo</p>
+          <h5>E.T. "Francisco Fajardo"</h5>
+          <p class="grey-text text-lighten-1">Formamos estudiantes con miras al éxito de un país productivo</p>
         </div>
 
         <div class="col l4 offset-l2 s2">
-          <h5 class="white-text">Contacto</h5>
+          <h5>Contacto</h5>
           <ul>
             <li><a href="https://www.facebook.com/groups/555209544587295">Facebook</a></li>
             <li><a href="https://twitter.com/francis90515194">Twitter</a></li>

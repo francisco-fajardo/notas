@@ -104,14 +104,14 @@
         <h1 style="margin-bottom:8px">Notas</h1>
 
         <div class="row">
-            <div class="col s12 m6">
+            <div class="col s6">
                 <p class="grey-text text-darken-2" style="margin-top:0">
                     <i class="material-icons md-24 d-block">calendar_today</i>
                     2020 - 2021
                 </p>
             </div>
 
-            <div class="col s12 m6">
+            <div class="col s6">
                 <p class="grey-text text-darken-2" style="margin-top:0">
                     <i class="material-icons md-24 d-block">announcement</i>
                     1er Momento

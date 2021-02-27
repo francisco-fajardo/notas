@@ -118,7 +118,6 @@
                 </p>
             </div>
         </div>
-      </div>
 
       <ul class="collapsible">
 <?php foreach (scandir(__DIR__ . "/img/notas/") as $file) {
@@ -151,15 +150,16 @@
 <?php
 } ?>
       </ul>
+        </div>
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer indigo darken-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5>E.T. "Francisco Fajardo"</h5>
-          <p class="grey-text text-lighten-1">Formamos estudiantes con miras al éxito de un país productivo</p>
+          <p>Formamos estudiantes con miras al éxito de un país productivo</p>
         </div>
 
         <div class="col l4 offset-l2 s2">

@@ -19,7 +19,10 @@
     },
     "browserslist": {
         "production": [
-            "defaults"
+            ">0.5%",
+            "last 2 versions",
+            "Firefox ESR",
+            "not dead"
         ],
         "development": [
             "last 1 chrome version",
@@ -29,7 +32,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.12.17",
-        "@babel/preset-env": "^7.12.17",
+        "@babel/preset-env": "^7.13.12",
         "@prettier/plugin-php": "^0.16.1",
         "autoprefixer": "^10.2.4",
         "babel-loader": "^8.2.2",

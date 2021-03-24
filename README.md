@@ -1,6 +1,6 @@
 # Sistema Web NF
 
-Este sistema fue creado econ el proposito de que los estudiantes del E.T. "Francisco Fajardo" puedan visualizar sus notas.
+Este sistema fue creado con el proposito de que los estudiantes del E.T. "Francisco Fajardo" puedan visualizar sus notas.
 
 ## Funcionamiento
 
@@ -40,4 +40,4 @@ npm run build-dev
 
 ## Licencia
 
-Este proyecto esta bajo los términos de la Licencia de [MIT](https://github.com/francisco-fajardo/notas/blob/master/LICENSE).
+Este proyecto esta bajo los términos de la licencia de [MIT](https://github.com/francisco-fajardo/notas/blob/master/LICENSE).

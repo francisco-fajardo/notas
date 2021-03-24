@@ -1,6 +1,6 @@
 # Sistema Web NF
 
-Este sistema fue creado con el proposito de que los estudiantes del E.T. "Francisco Fajardo" puedan visualizar sus notas.
+Este sistema fue creado con el proposito de que los estudiantes de la E.T. "Francisco Fajardo" puedan visualizar sus notas.
 
 ## Funcionamiento
 

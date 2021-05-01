@@ -114,7 +114,7 @@
             <div class="col s6">
                 <p class="grey-text text-darken-2" style="margin-top:0">
                     <i class="material-icons md-24 d-block">announcement</i>
-                    1er Momento
+                    2do Momento
                 </p>
             </div>
         </div>

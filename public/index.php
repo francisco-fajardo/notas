@@ -78,8 +78,6 @@
   <link rel="manifest" href="site.webmanifest" />
 
   <!-- Styles -->
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dist/style.css" />
 
@@ -106,14 +104,22 @@
         <div class="row">
             <div class="col s6">
                 <p class="grey-text text-darken-2" style="margin-top:0">
-                    <i class="material-icons md-24 d-block">calendar_today</i>
+                    <span class="d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </span>
                     2020 - 2021
                 </p>
             </div>
 
             <div class="col s6">
                 <p class="grey-text text-darken-2" style="margin-top:0">
-                    <i class="material-icons md-24 d-block">announcement</i>
+                    <span class="d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                        </svg>
+                    </span>
                     2do Momento
                 </p>
             </div>

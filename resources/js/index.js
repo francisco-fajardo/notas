@@ -10,6 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Init lightbox
     new SimpleLightbox({
-        elements: ".collapsible a"
+        elements: ".collapsible a",
     });
 });

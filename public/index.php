@@ -152,8 +152,10 @@
         <li>
           <div class="collapsible-header"><?php echo $title; ?></div>
           <div class="collapsible-body">
-            <a href="<?php echo $url; ?>" title="<?php echo "Notas de " . $altImage; ?>">
-                <img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " . $altImage; ?>" class="lazy" />
+            <a href="<?php echo $url; ?>" title="<?php echo "Notas de " .
+    $altImage; ?>">
+                <img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .
+    $altImage; ?>" class="lazy" />
             </a>
           </div>
         </li>

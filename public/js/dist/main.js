@@ -1,1 +1,1 @@
-(self.webpackChunknotas=self.webpackChunknotas||[]).push([[179],{265:function(){"use strict";document.addEventListener("DOMContentLoaded",(function(){M.AutoInit(),(new LazyLoad).update()}))}},0,[[265,666]]]);
+(self.webpackChunknotas=self.webpackChunknotas||[]).push([[179],{265:function(){"use strict";document.addEventListener("DOMContentLoaded",(function(){M.AutoInit(),(new LazyLoad).update(),new SimpleLightbox({elements:".collapsible a"})}))}},0,[[265,666]]]);

@@ -78,7 +78,8 @@
   <link rel="manifest" href="site.webmanifest" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" integrity="sha512-8ou7fcyycqNuFpv9eBUT7lvFnZ/tHM7Of3qOCjxPYKBUYYuQdrbJnWH61dAez1M2p3C42GKN1m6xc/UQgfdo0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/dist/style.css" />
 
   <!--[if lt IE 9]>
@@ -150,8 +151,11 @@
     ?>
         <li>
           <div class="collapsible-header"><?php echo $title; ?></div>
-          <div class="collapsible-body"><img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .
-    $altImage; ?>" class="lazy" /></div>
+          <div class="collapsible-body">
+            <a href="<?php echo $url; ?>" title="<?php echo "Notas de " . $altImage; ?>">
+                <img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " . $altImage; ?>" class="lazy" />
+            </a>
+          </div>
         </li>
 <?php
 } ?>
@@ -187,8 +191,9 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.0/lazyload.min.js" integrity="sha512-lVcnjCLGjJTaZU55wD7H3f8SJVi6VV5cQRcmGuYcyIY607N/rzZGEl90lNgsiEhKygATryG/i6e5u2moDFs5kQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.0/lazyload.min.js" integrity="sha512-lVcnjCLGjJTaZU55wD7H3f8SJVi6VV5cQRcmGuYcyIY607N/rzZGEl90lNgsiEhKygATryG/i6e5u2moDFs5kQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js" integrity="sha512-OYtVuAy6KSuCAf0HG9j12VF96ehWm00yWBkYAqwzOkGV4WLPCWlOY1q1C3Mr4ouohyL5vEPqTulTyDlT7AHoGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/dist/runtime.js"></script>
   <script src="js/dist/main.js"></script>
 </body>

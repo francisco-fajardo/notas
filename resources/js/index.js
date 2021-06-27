@@ -7,4 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Init lazyload of images
     const lazyLoadInstance = new LazyLoad();
     lazyLoadInstance.update();
+
+    // Init lightbox
+    new SimpleLightbox({
+        elements: ".collapsible a"
+    });
 });

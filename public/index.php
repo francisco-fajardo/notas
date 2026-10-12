@@ -1,3 +1,7 @@
+<?php
+// Configuración opcional: define el año escolar (ej. "2020 - 2021"). Si no está definida, es null o vacía, se calcula automáticamente.
+$schoolYear = $schoolYear ?? null;
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -78,6 +82,8 @@
   <link rel="manifest" href="site.webmanifest" />
 
   <!-- Styles -->
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" integrity="sha512-8ou7fcyycqNuFpv9eBUT7lvFnZ/tHM7Of3qOCjxPYKBUYYuQdrbJnWH61dAez1M2p3C42GKN1m6xc/UQgfdo0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/dist/style.css" />
@@ -89,10 +95,11 @@
 </head>
 
 <body>
-  <nav class="indigo darken-2">
+  <nav class="white z-depth-1">
     <div class="nav-wrapper container">
-      <a href="https://franciscofajardo.com/notas/" class="brand-logo center">
-        <img src="img/covid.png" alt="Contra el COVID-19" />
+      <a href="https://franciscofajardo.com/notas/" class="brand-logo center valign-wrapper" style="height: 100%;">
+        <img src="img/logo-franciscofajardo.png" alt="E.T. Francisco Fajardo" style="height: 42px; width: auto; vertical-align: middle; margin-right: 8px;" />
+        <span class="grey-text text-darken-3" style="font-size: 1.3rem; font-weight: 600;">Notas</span>
       </a>
     </div>
   </nav>
@@ -110,7 +117,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                     </span>
-                    2020 - 2021
+                    <?php echo !empty($schoolYear)
+                        ? $schoolYear
+                        : date("Y", strtotime("-1 year")) .
+                            " - " .
+                            date("Y"); ?>
                 </p>
             </div>
 
@@ -166,29 +177,48 @@
     </div>
   </main>
 
-  <footer class="page-footer indigo darken-2">
+  <footer class="page-footer white z-depth-1" style="border-top: 1px solid #e0e0e0;">
     <div class="container">
-      <div class="row">
+      <div class="row valign-wrapper" style="flex-wrap: wrap;">
         <div class="col l6 s12">
-          <h5>E.T. "Francisco Fajardo"</h5>
-          <p>Formamos estudiantes con miras al éxito de un país productivo</p>
+          <div class="valign-wrapper" style="margin-bottom: 0.8rem;">
+            <img src="img/logo-franciscofajardo.png" alt="E.T. Francisco Fajardo" style="height: 48px; width: auto; margin-right: 12px;" />
+            <h5 class="grey-text text-darken-3" style="margin: 0; font-size: 1.3rem; font-weight: 600;">E.T. "Francisco Fajardo"</h5>
+          </div>
+          <p class="grey-text text-darken-1">Formamos estudiantes con miras al éxito de un país productivo.</p>
         </div>
 
-        <div class="col l4 offset-l2 s2">
-          <h5>Contacto</h5>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="grey-text text-darken-3" style="font-size: 1.1rem; font-weight: 600;">Contacto</h5>
           <ul>
-            <li><a href="https://www.facebook.com/groups/555209544587295">Facebook</a></li>
-            <li><a href="https://twitter.com/francis90515194">Twitter</a></li>
-            <li><a href="https://github.com/francisco-fajardo">GitHub</a></li>
-            <li><a href="mailto:contacto@franciscofajardo.com">Correo</a></li>
+            <li>
+              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://www.facebook.com/groups/555209544587295">
+                <i class="material-icons tiny left">public</i>Facebook
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://twitter.com/francis90515194">
+                <i class="material-icons tiny left">chat</i>Twitter
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://github.com/francisco-fajardo">
+                <i class="material-icons tiny left">code</i>GitHub
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="mailto:contacto@franciscofajardo.com">
+                <i class="material-icons tiny left">email</i>Correo
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="footer-copyright center">
+    <div class="footer-copyright center white grey-text text-darken-1" style="border-top: 1px solid #f0f0f0;">
       <div class="container">
-        &copy; 2020 - 2021 E.T. "Francisco Fajardo"
+        &copy; 2020 - <?php echo date("Y"); ?> E.T. "Francisco Fajardo"
       </div>
     </div>
   </footer>

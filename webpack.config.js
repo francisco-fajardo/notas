@@ -1,6 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const config = {
     entry: "./resources/js/index.js",
@@ -35,9 +35,9 @@ const config = {
         new MiniCssExtractPlugin({
             filename: "css/dist/style.css",
         }),
-        new OptimizeCssAssetsPlugin({}),
     ],
     optimization: {
+        minimizer: ["...", new CssMinimizerPlugin()],
         runtimeChunk: "single",
         splitChunks: {
             cacheGroups: {

@@ -1,6 +1,6 @@
 <?php
 // Configuración opcional: define el año escolar (ej. "2020 - 2021"). Si no está definida, es null o vacía, se calcula automáticamente.
-$schoolYear = $schoolYear ?? null;
+$schoolYear = $schoolYear ?? "2026 - 2027";
 ?>
 <!DOCTYPE html>
 <html lang="es">

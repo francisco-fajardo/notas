@@ -137,19 +137,22 @@ $schoolYear = $schoolYear ?? "2026 - 2027";
             </div>
         </div>
 
-      <ul class="collapsible">
-<?php foreach (scandir(__DIR__ . "/img/notas/") as $file) {
+<?php
+$files = array_filter(scandir(__DIR__ . "/img/notas/"), function ($file) {
+    return $file !== "." && $file !== ".." && !preg_match("/^\..*/", $file);
+});
+?>
 
-    if ($file === "." || $file === "..") {
-        // Skip directories "." and ".."
-        continue;
-    }
-
-    if (preg_match("/^\..*/", $file)) {
-        // Skip dotfiles
-        continue;
-    }
-
+<?php if (empty($files)): ?>
+        <div class="card-panel grey lighten-4 z-depth-0" style="border-radius: 12px; padding: 3rem 1.5rem; margin: 2rem 0; border: 1px dashed #bdbdbd;">
+          <i class="material-icons grey-text text-darken-1" style="font-size: 4rem; display: block; margin-bottom: 0.5rem;">description</i>
+          <p class="flow-text grey-text text-darken-3" style="font-size: 1.25rem; font-weight: 500; margin: 0;">
+            No hay notas publicadas disponibles para este momento
+          </p>
+        </div>
+<?php else: ?>
+        <ul class="collapsible">
+<?php foreach ($files as $file) {
     $exploded = explode(".", $file);
 
     $year = $exploded[0];
@@ -160,19 +163,19 @@ $schoolYear = $schoolYear ?? "2026 - 2027";
     $altImage = "{$year} {$career} &quot;{$section}&quot;";
     $url = "img/notas/" . $file;
     ?>
-        <li>
-          <div class="collapsible-header"><?php echo $title; ?></div>
-          <div class="collapsible-body">
-            <a href="<?php echo $url; ?>" title="<?php echo "Notas de " .
+          <li>
+            <div class="collapsible-header"><?php echo $title; ?></div>
+            <div class="collapsible-body">
+              <a href="<?php echo $url; ?>" title="<?php echo "Notas de " .
     $altImage; ?>">
-                <img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .
+                  <img data-src="<?php echo $url; ?>" alt="<?php echo "Notas de " .
     $altImage; ?>" class="lazy" />
-            </a>
-          </div>
-        </li>
-<?php
-} ?>
-      </ul>
+              </a>
+            </div>
+          </li>
+<?php } ?>
+        </ul>
+<?php endif; ?>
         </div>
     </div>
   </main>
@@ -192,23 +195,23 @@ $schoolYear = $schoolYear ?? "2026 - 2027";
           <h5 class="grey-text text-darken-3" style="font-size: 1.1rem; font-weight: 600;">Contacto</h5>
           <ul>
             <li>
-              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://www.facebook.com/groups/555209544587295">
-                <i class="material-icons tiny left">public</i>Facebook
+              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://www.facebook.com/groups/555209544587295" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>Facebook
               </a>
             </li>
             <li>
-              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://twitter.com/francis90515194">
-                <i class="material-icons tiny left">chat</i>Twitter
+              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://twitter.com/francis90515194" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px; flex-shrink: 0;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Twitter / X
               </a>
             </li>
             <li>
-              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://github.com/francisco-fajardo">
-                <i class="material-icons tiny left">code</i>GitHub
+              <a class="grey-text text-darken-1 valign-wrapper footer-link" href="https://github.com/francisco-fajardo" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>GitHub
               </a>
             </li>
             <li>
               <a class="grey-text text-darken-1 valign-wrapper footer-link" href="mailto:contacto@franciscofajardo.com">
-                <i class="material-icons tiny left">email</i>Correo
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; flex-shrink: 0;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>Correo
               </a>
             </li>
           </ul>
